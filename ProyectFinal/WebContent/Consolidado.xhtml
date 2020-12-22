@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Consolidado</title>
+        <meta name="Hilary" content="Autor"></meta>
+    </h:head>
+    <!-- Add 50px padding top to the body for the navbar -->
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="iRobotik" brandHref="index.xhtml" inverse="true" fixed="top">
+            <b:navbarLinks>
+                <b:navLink value="Inicio" href="index.xhtml"></b:navLink>
+                <b:navLink value="Robotica" href="robotica.xhtml"></b:navLink> 
+                <b:navLink value="Programacion" href="#"></b:navLink> 
+                <b:navLink value="Inteligencia Artificial" href="#"></b:navLink>
+            </b:navbarLinks>
+            <h:form styleClass="navbar-form navbar-right">              
+              <tr>
+			    <td><b:button look="danger" value="Salir" icon="chevron-right" iconAlign="right" href="login.xhtml"/></td>
+			    <td></td>
+			    <td></td>
+			  </tr>
+
+            </h:form>
+        </b:navBar>  
+ 			<h:form>
+ 					<h2 style="color: red;">Consolidado de Componentes Electrónicos</h2> 
+ 					
+			    <b:button look="success" value="Añadir elemento" style="float: right;"/>
+			
+				<tr/>
+				<tr/>
+				<tr/>
+			 				
+                    <h:dataTable styleClass="table" value="#{ControllerManagedBean.robList}" var="rob" border="2" >
+                    <tbody>
+
+                        <h:column>
+                            <f:facet name="header">N°</f:facet>#{rob.n}</h:column>
+                        <h:column>
+                            <f:facet name="header">Nombre</f:facet>#{rob.nombre}</h:column>
+                        <h:column>
+                            <f:facet name="header">Descripcion</f:facet>#{rob.descripcion}</h:column>
+
+                        <h:column>
+                            <f:facet name="header">Marca</f:facet>#{rob.marca}</h:column>
+
+                        <h:column>
+                            <f:facet name="header">Funcion</f:facet>#{rob.funcion}</h:column>
+
+                        <h:column>
+                            <f:facet name="header">Peso</f:facet>#{rob.peso}</h:column>
+                         
+                        <h:column>
+                            <f:facet name="header">Acceso</f:facet> 
+                            <b:button look="warning" value="E"/>
+                            <b:button look="danger" value="X"/>
+                            </h:column>
+                       </tbody>                                              
+                    </h:dataTable>
+                 
+                </h:form>         
+             
+            </h:body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Inicio</title>
+        <meta name="Hilary" content="Autor"></meta>
+    </h:head>
+    <!-- Add 50px padding top to the body for the navbar -->
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="iRobotik" brandHref="index.xhtml" inverse="true" fixed="top">
+            <b:navbarLinks>
+                <b:navLink value="Inicio" href="index.xhtml"></b:navLink>
+                <b:navLink value="Robotica" href="robotica.xhtml"></b:navLink> 
+                <b:navLink value="Programacion" href="#"></b:navLink> 
+                <b:navLink value="Inteligencia Artificial" href="#"></b:navLink>
+            </b:navbarLinks>
+            <h:form styleClass="navbar-form navbar-right">              
+              <tr>
+			    <td><b:button look="danger" value="Salir" icon="chevron-right" iconAlign="right" href="login.xhtml"/></td>
+			    <td></td>
+			    <td></td>
+			  </tr>
+
+            </h:form>
+        </b:navBar>
+            </h:body>
+</html>

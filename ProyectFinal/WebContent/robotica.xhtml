@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Robotica</title>
+        <meta name="Hilary" content="Autor"></meta>
+    </h:head>
+    <!-- Add 50px padding top to the body for the navbar -->
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="iRobotik" brandHref="index.xhtml" inverse="true" fixed="top">
+            <b:navbarLinks>
+                <b:navLink value="Inicio" href="index.xhtml"></b:navLink>
+                <b:navLink value="Robotica" href="robotica.xhtml"></b:navLink> 
+                <b:navLink value="Programacion" href="#"></b:navLink> 
+                <b:navLink value="Inteligencia Artificial" href="#"></b:navLink>
+            </b:navbarLinks>
+            <h:form styleClass="navbar-form navbar-right">              
+              <tr>
+			    <td><b:button look="danger" value="Salir" icon="chevron-right" iconAlign="right" href="login.xhtml"/></td>
+			    <td></td>
+			    <td></td>
+			  </tr>
+
+            </h:form>
+        </b:navBar>
+        
+       <b:jumbotron>
+               	<img src="../resources/img/#{educ[ 'educacion.roboticapanel']}" width="100%" height="100%"/>
+       </b:jumbotron>
+        
+     <b:container>
+
+            <b:row>
+                <b:column col-md="6">
+                    <br/>
+                        <br/>
+                    <h2>Capacitaciones</h2><br/>
+                    <img src="../resources/img/#{educ[ 'educacion.robcapa']}" width="70%" height="70%"/>
+               		<br/>
+               			<br/>
+                    <p><b:button look="link" value="Ver mas" icon="chevron-right" href="robotica.xhtml"/></p>
+                        <br/>
+                            <br/>
+                </b:column>
+                
+                <b:column col-md="6">
+                    <br/>
+                        <br/>
+                	<h2>Kits Roboticos</h2><br/>
+                	<img src="../resources/img/#{educ[ 'educacion.robkits']}" width="90%" height="90%"/>
+               		<br/>
+               			<br/>
+                    <p><b:button look="link" value="Ver mas" icon="chevron-right" href="KitsRobot.xhtml"/></p>
+                    <br/>
+                    <br/>
+                </b:column>
+                           
+            </b:row>
+            <hr/>
+        </b:container>
+        
+       <b:container>
+            <b:row>
+                <b:column col-md="6">
+                    <br/>
+                        <br/>
+                    <h2>Consolidado de componentes</h2><br/>
+                    <img src="../resources/img/#{educ[ 'educacion.robconsol']}" width="70%" height="70%"/>
+               		<br/>
+               			<br/>
+                    <p><b:button look="link" value="Ver mas" icon="chevron-right" href="Consolidado.xhtml"/></p>
+                        <br/>
+                            <br/>
+                </b:column>
+                
+                <b:column col-md="6">
+                    <br/>
+                        <br/>
+                	<h2>Blogs Roboticos</h2><br/>
+                	<img src="../resources/img/#{educ[ 'educacion.robblogs']}" width="70%" height="70%"/>
+               		<br/>
+               			<br/>
+                    <p><b:button look="link" value="Ver mas" icon="chevron-right" href="#"/></p>
+                        <br/>
+                            <br/>
+                </b:column>
+                           
+            </b:row>
+            <hr/>
+        </b:container>      
+    </h:body>
+</html>

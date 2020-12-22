@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Inicio</title>
+        <meta name="Hilary" content="Autor"></meta>
+    </h:head>
+    <!-- Add 50px padding top to the body for the navbar -->
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="iRobotik" brandHref="index.xhtml" inverse="true" fixed="top">
+            <b:navbarLinks>
+                <b:navLink value="Inicio" href="index.xhtml"></b:navLink>
+                <b:navLink value="Robotica" href="robotica.xhtml"></b:navLink> 
+                <b:navLink value="Programacion" href="#"></b:navLink> 
+                <b:navLink value="Inteligencia Artificial" href="#"></b:navLink>
+            </b:navbarLinks>
+            <h:form styleClass="navbar-form navbar-right">              
+              <tr>
+			    <td><b:button look="danger" value="Salir" icon="chevron-right" iconAlign="right" href="login.xhtml"/></td>
+			    <td></td>
+			    <td></td>
+			  </tr>
+
+            </h:form>
+        </b:navBar>
+       <b:jumbotron>
+            <b:container>
+                <h2><h:outputText value="#{educ.educacion}"/></h2>
+                <p><h:outputText value="#{educ[ 'educacion.parrafo']}"></h:outputText>
+                </p>
+            </b:container>
+
+        </b:jumbotron>
+        <b:container>
+            <b:row>
+                <b:column col-md="4">           		             		
+               		<img src="../resources/img/#{educ[ 'educacion.roboticaimg']}" width="60%" height="60%"/>
+               		<br/>
+                    <h2><h:outputText value="#{educ[ 'educacion.robotica']}"></h:outputText></h2>
+                    <p><h:outputText value="#{educ[ 'educacion.robdescripcion1']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.robdescripcion2']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.robdescripcion3']}"></h:outputText></p>
+                    <p><b:button look="info" value="Ir a la pagina" icon="chevron-right" href="robotica.xhtml"/></p>
+                </b:column>
+                
+                <b:column col-md="4">
+                	<img src="../resources/img/#{educ[ 'educacion.programacionimg']}" width="60%" height="60%"/>
+               		<br/>
+                	<h2><h:outputText value="#{educ[ 'educacion.programacion']}"></h:outputText></h2>
+                    <p><h:outputText value="#{educ[ 'educacion.progradescripcion1']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.progradescripcion2']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.progradescripcion3']}"></h:outputText></p>
+                    <p><b:button look="info" value="Ir a la pagina" icon="chevron-right" href="#"/></p>
+                </b:column>
+                
+                <b:column col-md="4">
+                	<img src="../resources/img/#{educ[ 'educacion.iaimg']}" width="60%" height="60%"/>
+               		<br/>
+                	<h2><h:outputText value="#{educ[ 'educacion.inteligencia']}"></h:outputText></h2>
+                    <p><h:outputText value="#{educ[ 'educacion.iadescripcion1']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.iadescripcion2']}"></h:outputText></p>
+                    <p><h:outputText value="#{educ[ 'educacion.iadescripcion3']}"></h:outputText></p>
+                    <p><b:button look="info" value="Ir a la pagina" icon="chevron-right" href="#"/></p>
+                </b:column>                
+            </b:row>
+            <hr/>
+            <footer>
+            <p>© iRobotik 2020</p>
+            </footer>
+        </b:container>
+
+    </h:body>
+</html>
